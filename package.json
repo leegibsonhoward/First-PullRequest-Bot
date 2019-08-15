@@ -1,0 +1,24 @@
+{
+  "name": "luffy",
+  "version": "0.0.1",
+  "description": "Discord bot made with nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infinit0xff/Luffy.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "nodejs"
+  ],
+  "author": "infinit0xff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infinit0xff/Luffy/issues"
+  },
+  "homepage": "https://github.com/infinit0xff/Luffy#readme"
+}
