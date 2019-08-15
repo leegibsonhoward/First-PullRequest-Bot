@@ -25,5 +25,8 @@
   "homepage": "https://github.com/infinit0xff/Luffy#readme",
   "devDependencies": {
     "eslint": "^6.1.0"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
   }
 }
