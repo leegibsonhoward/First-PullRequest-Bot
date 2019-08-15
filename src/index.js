@@ -5,6 +5,9 @@ require('dotenv').config();
 const client = new Discord.Client();
 
 // message to client.
+client.on('ready', () => {
+    console.log(`logged in as ${client.user.tag}`);
+})
 
 // check for messages.
 
