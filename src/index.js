@@ -10,6 +10,12 @@ client.on('ready', () => {
 })
 
 // check for messages.
+client.on('message', msg => {
+    // send reply when certain command is entered by a user.
+    if (msg.content === 'hello') {
+        msg.reply('Welcome to the server!');
+    } 
+});
 
 // login client using token
 client.login(process.env.TOKEN);
