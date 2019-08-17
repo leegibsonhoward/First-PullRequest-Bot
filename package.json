@@ -25,7 +25,12 @@
   },
   "homepage": "https://github.com/infinit0xff/Luffy#readme",
   "devDependencies": {
-    "eslint": "^6.1.0"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.1.0",
+    "nodemon": "^1.19.1"
   },
   "dependencies": {
     "discord.js": "^11.5.1",
