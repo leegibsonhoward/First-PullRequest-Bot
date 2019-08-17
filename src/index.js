@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const fetch = require('node-fetch');
+
 require('dotenv').config();
 
 // new client
@@ -20,7 +22,20 @@ client.on('message', msg => {
     // this long url query string gets users first pull request.  
     var url = "https://api.github.com/search/issues?q=type:pr+author:" + userName + "&sort=created&order=asc&per_page=1";    
     
-   
+    // fetch from api url as json.
+    fetch(url)
+    .then(res => res.json())
+    // return body
+    .then(body => {
+        // prevents duplicate messages.
+        if (msg.author.id !== client.user.id && msg.content){
+
+            //destructure items array. 
+            const [pr] = body.items;
+            console.log(pr)  
+        }
+    })
+    .catch(err => { console.log({error: err}) });
 });
 
 // login client using token
