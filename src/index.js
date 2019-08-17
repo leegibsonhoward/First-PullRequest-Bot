@@ -10,11 +10,17 @@ client.on('ready', () => {
 })
 
 // check for messages.
+// enter github username and get users first pull request.
+
 client.on('message', msg => {
-    // send reply when certain command is entered by a user.
-    if (msg.content === 'hello') {
-        msg.reply('Welcome to the server!');
-    } 
+    
+    // github username sent as message
+    var userName = msg.content;
+
+    // this long url query string gets users first pull request.  
+    var url = "https://api.github.com/search/issues?q=type:pr+author:" + userName + "&sort=created&order=asc&per_page=1";    
+    
+   
 });
 
 // login client using token
