@@ -4,7 +4,9 @@
   "description": "Discord bot made with nodejs.",
   "main": "index.js",
   "scripts": {
-    "dev": "node src",
+    "dev": "nodemon --exec babel-node src",
+    "build": "babel src --out-dir dist",
+    "start": "node dist",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
