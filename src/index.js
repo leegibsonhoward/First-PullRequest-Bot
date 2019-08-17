@@ -3,6 +3,10 @@ const fetch = require('node-fetch');
 
 require('dotenv').config();
 
+const URL = "https://api.github.com/search/issues"
+const QUERY_AUTHOR = "?q=type:pr+author:"
+const SORT_AND_ORDER = "&sort=created&order=asc&per_page=1"
+
 // new client
 const client = new Discord.Client();
 
@@ -17,10 +21,10 @@ client.on('ready', () => {
 client.on('message', msg => {
     
     // github username sent as message
-    var userName = msg.content;
+    var author = msg.content;
 
-    // this long url query string gets users first pull request.  
-    var url = "https://api.github.com/search/issues?q=type:pr+author:" + userName + "&sort=created&order=asc&per_page=1";    
+    // query string concatenation gets users first pull request.  
+    var url = URL + QUERY_AUTHOR + author + SORT_AND_ORDER; 
     
     // fetch from api url as json.
     fetch(url)
@@ -37,6 +41,7 @@ client.on('message', msg => {
     })
     .catch(err => { console.log({error: err}) });
 });
+
 
 // login client using token
 client.login(process.env.TOKEN);
