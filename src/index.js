@@ -1,14 +1,15 @@
-const Discord = require('discord.js');
-const fetch = require('node-fetch');
+import { Client, RichEmbed } from 'discord.js';
+import fetch from 'node-fetch';
 
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const URL = "https://api.github.com/search/issues"
 const QUERY_AUTHOR = "?q=type:pr+author:"
 const SORT_AND_ORDER = "&sort=created&order=asc&per_page=1"
 
 // new client
-const client = new Discord.Client();
+const client = new Client();
 
 // message to client.
 client.on('ready', () => {
@@ -39,12 +40,12 @@ client.on('message', msg => {
             // console.log(body)  
 
             // send to channel as embedded message
-            let embed = new Discord.RichEmbed()
+            let embed = new RichEmbed()
             .setThumbnail(pr.user.avatar_url)
             .setAuthor(pr.title)
             .setDescription(pr.html_url + '/commits')
             
-            msg.channel.send({embed: embed});  
+            msg.channel.send({embed: embed});
         }
     })
     .catch(err => { console.log({error: err}) });
