@@ -9,6 +9,7 @@
     "start": "node dist",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
+    "clean": "rm -rf dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
