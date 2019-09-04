@@ -2,10 +2,11 @@
   "name": "first-github-pr",
   "version": "0.8.0",
   "description": "discord bot replies with github users first pull request.",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
     "dev": "nodemon --exec babel-node src",
     "build": "babel src --out-dir dist",
+    "prestart": "npm run -s build",
     "start": "node dist",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
