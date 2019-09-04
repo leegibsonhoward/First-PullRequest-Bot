@@ -1,20 +1,19 @@
-# Luffy 
-the bot
+# first-github-pr
 
-Discord bot using NodeJS.
+Discord bot that fetches a github user(by username) and returns their very first pull request for that account.
 
 
-All development will take place on the 'development' branch, then merged to master.
+***All development will take place on the 'development' branch, then merged to master***
 
 
 
 # Installation
 
-Start by cloning the [repo](https://github.com/infinit0xff/Luffy.git)
+Start by cloning the [repo](https://github.com/infinit0xff/first-github-pr.git)
 
-`git clone https://github.com/infinit0xff/Luffy.git`
+`git clone https://github.com/infinit0xff/first-github-pr.git`
 
-`cd Luffy/`
+`cd first-github-pr/`
 
 `npm install`
 

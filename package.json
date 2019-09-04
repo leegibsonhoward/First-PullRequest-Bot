@@ -1,7 +1,7 @@
 {
-  "name": "luffy",
-  "version": "0.0.1",
-  "description": "Discord bot made with nodejs.",
+  "name": "first-github-pr",
+  "version": "0.8.0",
+  "description": "discord bot replies with github users first pull request.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec babel-node src",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infinit0xff/Luffy.git"
+    "url": "git+https://github.com/infinit0xff/first-github-pr.git"
   },
   "keywords": [
     "bot",
@@ -24,9 +24,9 @@
   "author": "infinit0xff",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/infinit0xff/Luffy/issues"
+    "url": "https://github.com/infinit0xff/first-github-pr/issues"
   },
-  "homepage": "https://github.com/infinit0xff/Luffy#readme",
+  "homepage": "https://github.com/infinit0xff/first-github-pr#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
