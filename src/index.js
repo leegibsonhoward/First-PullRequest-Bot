@@ -36,7 +36,15 @@ client.on('message', msg => {
 
             //destructure items array. 
             const [pr] = body.items;
-            console.log(pr)  
+            // console.log(body)  
+
+            // send to channel as embedded message
+            let embed = new Discord.RichEmbed()
+            .setThumbnail(pr.user.avatar_url)
+            .setAuthor(pr.title)
+            .setDescription(pr.html_url + '/commits')
+            
+            msg.channel.send({embed: embed});  
         }
     })
     .catch(err => { console.log({error: err}) });
