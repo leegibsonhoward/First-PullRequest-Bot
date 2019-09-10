@@ -1,19 +1,47 @@
 import { Client, RichEmbed } from 'discord.js';
 import fetch from 'node-fetch';
-
+import http from 'http';
 import dotenv from 'dotenv';
 dotenv.config();
+
+// define variable to hold port number
+const port = process.env.PORT || 5000;
 
 const URL = "https://api.github.com/search/issues"
 const QUERY_AUTHOR = "?q=type:pr+author:"
 const SORT_AND_ORDER = "&sort=created&order=asc&per_page=1"
+
+//*
+//--- Default Server, 
+//*
+
+// defined function to handle req, res
+function respondToRequest (req, res){
+    // placeholder: 
+    // not logging anything
+    console.log(res);
+    console.log(req);
+}
+// create basic server using http module
+const server = http.createServer((req, res) => {
+    respondToRequest(req, res);
+});
+// server listens on port, host
+server.listen(port, () => {
+    console.log(`[msg::app] server running...`);
+});
+//
+
+//*
+// Discord.js Bot
+//*
 
 // new client
 const client = new Client();
 
 // message to client.
 client.on('ready', () => {
-    console.log(`logged in as ${client.user.tag}`);
+    console.log(`[msg::app] bot listening...`);
 })
 
 // check for messages.
