@@ -1,4 +1,4 @@
-# first-github-pr
+# First Pull Request Bot
 
 Discord bot that fetches a github user(by username) and returns their very first pull request for that account.
 
@@ -9,11 +9,11 @@ Discord bot that fetches a github user(by username) and returns their very first
 
 # Installation
 
-Start by cloning the [repo](https://github.com/infinit0xff/first-github-pr.git)
+Start by cloning the [repo](https://github.com/leeghwrd/First-PullRequst-Bot)
 
-`git clone https://github.com/infinit0xff/first-github-pr.git`
+`git clone https://github.com/leeghwrd/First-PullRequest-Bot.git`
 
-`cd first-github-pr/`
+`cd First-PullRequest-Bot`
 
 `npm install`
 
