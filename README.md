@@ -43,3 +43,9 @@ fix syntax errors and warnings
 delete dist/ 
 
 `npm run clean`
+
+
+# Todo
+
+- Add error handling
+
