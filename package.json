@@ -1,5 +1,5 @@
 {
-  "name": "first-github-pr",
+  "name": "first-pullrequest-bot",
   "version": "0.8.0",
   "description": "discord bot replies with github users first pull request.",
   "main": "dist",
@@ -15,19 +15,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/infinit0xff/first-github-pr.git"
+    "url": "git+https://github.com/leegibsonhoward/First-PullRequest-Bot.git"
   },
   "keywords": [
     "bot",
     "discord",
     "nodejs"
   ],
-  "author": "infinit0xff",
+  "author": "Lee Howard <leegibsonhoward@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/infinit0xff/first-github-pr/issues"
+    "url": "https://github.com/leegibsonhoward/First-PullRequest-Bot/issues"
   },
-  "homepage": "https://github.com/infinit0xff/first-github-pr#readme",
+  "homepage": "https://github.com/leegibsonhoward/First-PullRequest-Bot#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
