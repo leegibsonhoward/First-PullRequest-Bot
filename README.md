@@ -2,12 +2,9 @@
 
 Discord bot that fetches a github user(by username) and returns their very first pull request for that account.
 
-
 ***All development will take place on the 'development' branch, then merged to master***
 
-
-
-# Installation
+## Installation
 
 Start by cloning the [repo](https://github.com/leeghwrd/First-PullRequst-Bot)
 
@@ -17,8 +14,7 @@ Start by cloning the [repo](https://github.com/leeghwrd/First-PullRequst-Bot)
 
 `npm install`
 
-
-# Usage
+## Usage
 
 run development server using nodemon
 
@@ -40,12 +36,10 @@ fix syntax errors and warnings
 
 `npm lint-fix`
 
-delete dist/ 
+delete dist/
 
 `npm run clean`
 
-
-# Todo
+## Todo
 
 - Add error handling
-
