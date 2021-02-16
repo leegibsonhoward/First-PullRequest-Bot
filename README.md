@@ -6,9 +6,9 @@ Discord bot that fetches a github user(by username) and returns their very first
 
 ## Installation
 
-Start by cloning the [repo](https://github.com/leeghwrd/First-PullRequst-Bot)
+Start by cloning the [repo](https://github.com/leegibsonhoward/First-PullRequst-Bot)
 
-`git clone https://github.com/leeghwrd/First-PullRequest-Bot.git`
+`git clone https://github.com/leegibsonhoward/First-PullRequest-Bot.git`
 
 `cd First-PullRequest-Bot`
 
