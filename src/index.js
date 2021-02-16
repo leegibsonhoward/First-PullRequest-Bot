@@ -50,10 +50,10 @@ client.on('ready', () => {
 client.on('message', msg => {
     
     // github username sent as message
-    var author = msg.content;
+    let author = msg.content;
 
     // query string concatenation gets users first pull request.  
-    var url = URL + QUERY_AUTHOR + author + SORT_AND_ORDER; 
+    let url = URL + QUERY_AUTHOR + author + SORT_AND_ORDER; 
     
     // fetch from api url as json.
     fetch(url)
